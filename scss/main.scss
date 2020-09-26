@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html{
+	width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+@import 'nav', 'product', 'footer', 'responsive';

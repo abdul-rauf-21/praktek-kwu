@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #606368;
+  padding: 0.5rem;
+}
+footer p {
+  font-family: Montserrat;
+  color: white;
+}
+footer ul {
+  list-style: circle;
+  font-family: Montserrat;
+}
+footer ul li {
+  color: white;
+}

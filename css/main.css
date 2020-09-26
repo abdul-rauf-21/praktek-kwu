@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0.2rem;
+  font-family: Montserrat;
+  color: white;
+  background-color: #202125;
+}
+nav > * {
+  margin: 0.5rem;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+}
+nav ul > * {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+nav ul input {
+  padding: 0.6rem;
+  background-color: #606368;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+nav ul input::placeholder {
+  color: white;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+nav ul a:hover {
+  background-color: #606368;
+  border-radius: 5px;
+  text-shadow: 0 0 1px white;
+}
+
+main {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+}
+main .product {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  width: 40vw;
+  border: none;
+  box-shadow: 0 0 5px .2px black;
+  box-sizing: border-box;
+}
+main .product > * {
+  margin: 0.5rem;
+}
+main .product img {
+  border-radius: 8px;
+  width: 90%;
+}
+main .product hr {
+  width: 50px;
+  height: 5px;
+  border: none;
+  background-color: #3498db;
+}
+main .product p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+main .product .collapsible-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .product .collapsible-container .collapsible {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid rgba(96, 99, 104, 0.5);
+  font-family: inherit;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+main .product .collapsible-container .content {
+  padding: 0.5rem;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .product .collapsible-container .content > ul {
+  list-style: circle;
+}
+main .product .order-set {
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .product .order-set .addNum, main .product .order-set .subNum {
+  padding: 0.4rem 0.5rem;
+  margin: 0.4rem 0.8rem;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+main .product .order {
+  padding: 0.4rem 0.5rem;
+  margin: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  background-color: #2ecc71;
+}
+main .product .order a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #606368;
+  padding: 0.5rem;
+}
+footer p {
+  font-family: Montserrat;
+  color: white;
+}
+footer ul {
+  list-style: circle;
+  font-family: Montserrat;
+}
+footer ul li {
+  color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    justify-content: center;
+    margin-left: 0;
+  }
+  nav ul li {
+    margin: 0.1rem;
+  }
+
+  main {
+    padding: 0.5rem 0;
+  }
+  main .product {
+    width: 90vw;
+    margin: 0.3rem 0;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  html {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: center;
+    width: 50vw;
+  }
+}

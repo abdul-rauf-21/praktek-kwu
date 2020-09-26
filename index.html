@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://kit.fontawesome.com/58c1cf7b1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<h1>WebTitle</h1>
+		<ul>
+			<li>
+				<input type="text" placeholder="Cari Produk disini...">
+			</li>
+			<li>
+				<a href="#">Products</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div class="product">
+			<img src="img/pizza.jpg">
+			<h2 class="product-name">Pizza</h2>
+			<hr>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Voluptates hic iure eaque nobis, beatae laboriosam, pariatur cumque incidunt fugit. Perferendis!</p>
+			<div class="collapsible-container">
+				<button type="button" class="collapsible"><i class="fas fa-carrot"></i>&nbsp;&nbsp;Ingredient</button>
+				<div class="content">
+					<ul>
+						<li>1 kg tepung</li>
+						<li>2 kg tepung</li>
+						<li>3 kg tepung</li>
+					</ul>
+				</div>
+			</div>
+			<div class="order-set">
+				<button class="subNum" onclick="subOrder()"><i class="fas fa-minus"></i></button>
+				<p class="orderNum">1</p>
+				<button class="addNum" onclick="addOrder()"><i class="fas fa-plus"></i></button>
+			</div>
+			<button class="order">
+				<a href="" target="_blank" onclick="orderProduct()" class="orderLink">
+					<i class="fas fa-shopping-cart"></i>&nbsp;Order
+				</a>
+			</button>
+		</div>
+	</main>
+	<footer>
+		<p><b>Tugas Praktek</b></p><br>
+		<p><b>Nama Kelompok : </b><br>
+			<ul>
+				<li>Abdul Rauf</li>
+				<li>Ahmad Fauzan</li>
+				<li>Mhd Sumardi</li>
+				<li>Nanda Septian</li>
+			</ul>
+		</p>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
