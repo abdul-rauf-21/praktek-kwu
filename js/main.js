@@ -32,7 +32,7 @@ function subOrder(){
 }
 
 function orderProduct(){
-	let phoneNum = `6282384773721`;
+	let phoneNum = `6282285804007`;
 	let orderText = `Saya ingin memesan ${counter} ${productName}`
 	let link = `https://api.whatsapp.com/send?phone=${phoneNum}&text=${orderText}`;
 
